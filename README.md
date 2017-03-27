@@ -2,17 +2,25 @@
 
 Steps:
 
-1. Clone the project
+1. create a folder for a test project
+```
+mkdir test_project
+```
+```
+cd test_project
+```
+
+2. Clone the project
 ```
 git@github.com:vzgm/wbtest.git
 ```
 
-2. Install the Webpack
+3. Install the Webpack
 ```
 npm install webpack -g
 ```
 
-3. Install plugins
+4. Install plugins
 ```
 npm install --save-dev style-loader css-loader
 ```
@@ -21,9 +29,9 @@ npm install --save-dev style-loader css-loader
 npm install --save-dev sass-loader node-sass
 ```
 
-4. Run the Webpack
+5. Run the Webpack
 ```
 webpack
 ```
 
-5. Open index.html in a browser
+6. Open index.html in a browser
