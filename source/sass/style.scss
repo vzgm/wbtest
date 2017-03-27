@@ -3,8 +3,9 @@ body {
 	margin:0;
 	font-family:arial,sans-serif;
 }
+$background : blue;
 
 h2 {
-  background : blue;
+  background : $background;
   color      : yellow;
 }

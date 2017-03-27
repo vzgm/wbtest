@@ -1,5 +1,9 @@
+var webpack = require("webpack");
+
 module.exports = {
-  entry : './source/js/main.js',
+  entry : {
+    app: './source/js/main.js'
+  },
   output: {
     filename: './assets/bundle.js'
   },
@@ -7,13 +11,11 @@ module.exports = {
     loaders: [
       {
         test   : /\.css$/,
-        exclude: /node_modules/,
         loader : 'style-loader!css-loader'
       },
       {
         test   : /\.scss$/,
-        exclude: /node_modules/,
-        loader : 'style!css!sass'
+        loader : ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
 	}
